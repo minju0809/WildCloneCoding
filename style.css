@@ -1,20 +1,68 @@
 /* main */
 
-/* basicCanvas */
+.basicCanvasBtn {
+  z-index: 1;
+  position: fixed;
+}
+
+.canvasBrushBtn {
+  z-index: 1;
+  position: fixed;
+  left: 120;
+}
 
 .basicCanvas {
+  z-index: 0;
   display: none;
   position: fixed;
-  top: 40;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
 
+.canvasBrush {
+  z-index: 0;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* basicCanvas */
+
 .basicCanvas.active {
   display: block;
 }
 
-.basicCanvas.off {
+/* canvasBrush */
+
+.canvasBrush.active {
+  display: block;
+  /* background-color: aqua; */
+}
+
+.brush {
+  margin: 4px;
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.penBtn,
+.dotsBtn {
   display: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.penBtn.active,
+.dotsBtn.active {
+  display: inline-block;
+}
+
+.on {
+  border: 1px solid green;
 }

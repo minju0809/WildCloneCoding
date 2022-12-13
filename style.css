@@ -2,12 +2,19 @@
 
 /* basicCanvas */
 
-#canvas {
-  /* display: none; */
+.basicCanvas {
+  display: none;
   position: fixed;
-  top: 0;
+  top: 40;
   left: 0;
   width: 100%;
   height: 100%;
 }
 
+.basicCanvas.active {
+  display: block;
+}
+
+.basicCanvas.off {
+  display: none;
+}

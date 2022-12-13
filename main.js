@@ -1,8 +1,6 @@
-// const basicCanvasBtn = document.querySelector(".basicCanvasBtn");
+const basicCanvasBtn = document.querySelector(".basicCanvasBtn");
+const basicCanvas = document.querySelector(".basicCanvas");
 
-// basicCanvasBtn.addEventListener("click", () => {
-//   document.body.classList.toggle("canvas");
-//   basicCanvasBtn.querySelector("span:nth-child(1)").classList.toggle("active");
-//   basicCanvasBtn.querySelector("span:nth-child(2)").classList.toggle("active");
-// });
-
+basicCanvasBtn.addEventListener("click", function () {
+  basicCanvas.classList.toggle("active");
+});

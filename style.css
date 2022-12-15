@@ -11,7 +11,7 @@
   left: 120;
 }
 
-.basicCanvas {
+.canvas {
   z-index: 0;
   display: none;
   position: fixed;
@@ -21,7 +21,7 @@
   height: 100%;
 }
 
-.canvasBrush {
+/* .canvasBrush {
   z-index: 0;
   display: none;
   position: absolute;
@@ -29,7 +29,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-}
+} */
 
 /* basicCanvas */
 

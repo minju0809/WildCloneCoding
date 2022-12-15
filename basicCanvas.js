@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
-const canvas = document.querySelector("#canvas");
+const canvas = document.querySelector(".basicCanvas");
 const meshes = [];
 
 const renderer = new THREE.WebGLRenderer({ canvas });
@@ -35,7 +35,11 @@ function animate(time) {
   meshes.forEach((mesh, index) => {
     const radius = 1 + (15 * index) / meshes.length;
     const speed = index / meshes.length / 1000;
-    mesh.position.set(radius * Math.sin(index + time * speed), radius * Math.cos(index + time * speed), radius * Math.sin(index + 2 * time * speed));
+    mesh.position.set(
+      radius * Math.sin(index + time * speed), 
+      radius * Math.cos(index + time * speed), 
+      radius * Math.sin(index + 2 * time * speed)
+    );
     mesh.lookAt(0, 0, 0);
   });
 

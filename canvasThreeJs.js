@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
-const canvas = document.querySelector(".basicCanvas");
+const canvas = document.querySelector(".canvasThreeJs");
 const meshes = [];
 
 const renderer = new THREE.WebGLRenderer({ canvas });

@@ -1,12 +1,12 @@
-const basicCanvasBtn = document.querySelector(".basicCanvasBtn");
-const basicCanvas = document.querySelector(".basicCanvas");
+const canvasThreeJsBtn = document.querySelector(".canvasThreeJsBtn");
+const canvasThreeJs = document.querySelector(".canvasThreeJs");
 const boardResetBtn = document.querySelector(".boardResetBtn");
 const eraserBtn = document.querySelector(".eraserBtn");
 const penBtn = document.querySelector(".penBtn");
 const dotsBtn = document.querySelector(".dotsBtn");
 
-basicCanvasBtn.addEventListener("click", function () {
-  basicCanvas.classList.toggle("active");
+canvasThreeJsBtn.addEventListener("click", function () {
+  canvasThreeJs.classList.toggle("active");
   canvasBrush.classList.remove("active");
   boardResetBtn.classList.remove("active");
   eraserBtn.classList.remove("active");
@@ -19,7 +19,7 @@ const canvasBrush = document.querySelector(".canvasBrush");
 
 canvasBrushBtn.addEventListener("click", function () {
   canvasBrush.classList.toggle("active");
-  basicCanvas.classList.remove("active");
+  canvasThreeJs.classList.remove("active");
   boardResetBtn.classList.toggle("active");
   eraserBtn.classList.toggle("active");
   penBtn.classList.toggle("active");

@@ -41,7 +41,7 @@
 
 .canvasBrush.active {
   display: block;
-  /* background-color: aqua; */
+  background-color: rgb(234, 237, 230);
 }
 
 .brush {
@@ -52,12 +52,16 @@
   right: 0;
 }
 
+.boardResetBtn,
+.eraserBtn,
 .penBtn,
 .dotsBtn {
   display: none;
   border: 1px solid transparent;
   border-radius: 4px;
 }
+.boardResetBtn.active,
+.eraserBtn.active,
 .penBtn.active,
 .dotsBtn.active {
   display: inline-block;

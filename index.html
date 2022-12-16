@@ -8,21 +8,27 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <button class="canvasThreeJsBtn">CanvasThreeJs
+    <button class="canvasThreeJsBtn">
+      CanvasThreeJs
       <!-- <span class="basicCanvas_on">BasicCanvas 열기</span>
       <span class="basicCanvas_off">BasicCanvas 닫기</span> -->
     </button>
     <button class="canvasBrushBtn">CanvasBrush</button>
-      <div class="brush">
-        <button class="boardResetBtn">RESET</button>
-        <button class="eraserBtn">ERASER</button>
-        <button class="penBtn">PEN</button>
-        <button class="dotsBtn">DOTS</button>
-      </div>
+    <div class="brush">
+      <button class="boardResetBtn">RESET</button>
+      <button class="eraserBtn">ERASER</button>
+      <button class="penBtn">PEN</button>
+      <button class="dotsBtn">DOTS</button>
+    </div>
+    <button class="canvasConnectingDotsBtn">CanvasConnectingDots</button>
+    
     <canvas class="canvas canvasThreeJs"></canvas>
     <canvas class="canvas canvasBrush"></canvas>
+    <canvas class="canvas canvasConnectingDots"></canvas>
     <script src="./main.js"></script>
     <script type="module" src="./canvasThreeJs.js"></script>
     <script type="module" src="./canvasBrush.js"></script>
+    <script type="module" src="./dot.js"></script>
+    <script type="module" src="./canvasConnectingDots.js"></script>
   </body>
 </html>

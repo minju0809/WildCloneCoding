@@ -27,7 +27,7 @@ penBtn.onclick = () => {
 dotsBtn.onclick = () => {
   if (!dotsBtn.classList.contains("on")) dotsBtn.classList.add("on");
   if (penBtn.classList.contains("on")) penBtn.classList.remove("on");
-  if (eraserBtn.classList.contains("on")) penBtn.classList.remove("on");
+  if (eraserBtn.classList.contains("on")) eraserBtn.classList.remove("on");
   brushType = "dots";
 };
 
@@ -55,7 +55,7 @@ class Eraser {
   draw() {
     ctx.beginPath();
     ctx.fillStyle = "rgb(234, 237, 230)";
-    ctx.arc(this.x, this.y, 10, 0, Math.PI * 2);
+    ctx.arc(this.x, this.y, 15, 0, Math.PI * 2);
     ctx.fill();
   }
 }
@@ -68,7 +68,7 @@ class Pen {
   draw() {
     ctx.beginPath();
     ctx.fillStyle = "#33691e";
-    ctx.arc(this.x, this.y, 10, 0, Math.PI * 2);
+    ctx.arc(this.x, this.y, 15, 0, Math.PI * 2);
     ctx.fill();
   }
 }
@@ -89,7 +89,7 @@ class Dots {
     this.y += this.speedY;
     this.radius -= 0.2;
 
-    if (this.radius > 3) {
+    if (this.radius > 1) {
       requestAnimationFrame(this.draw.bind(this));
       ctx.beginPath();
       ctx.fillStyle = "#003d00";

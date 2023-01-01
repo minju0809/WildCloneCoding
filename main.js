@@ -8,8 +8,13 @@ const eraserBtn = document.querySelector(".eraserBtn");
 const penBtn = document.querySelector(".penBtn");
 const dotsBtn = document.querySelector(".dotsBtn");
 
-const canvasConnectingDotsBtn = document.querySelector(".canvasConnectingDotsBtn");
+const canvasConnectingDotsBtn = document.querySelector(
+  ".canvasConnectingDotsBtn"
+);
 const canvasConnectingDots = document.querySelector(".canvasConnectingDots");
+
+const canvasFlocksBtn = document.querySelector(".canvasFlocksBtn");
+const canvasFlocks = document.querySelector(".canvasFlocks");
 
 canvasThreeJsBtn.addEventListener("click", function () {
   canvasThreeJs.classList.toggle("active");
@@ -19,6 +24,7 @@ canvasThreeJsBtn.addEventListener("click", function () {
   eraserBtn.classList.remove("active");
   penBtn.classList.remove("active");
   dotsBtn.classList.remove("active");
+  canvasFlocks.classList.remove('active');
 });
 
 canvasBrushBtn.addEventListener("click", function () {
@@ -29,6 +35,7 @@ canvasBrushBtn.addEventListener("click", function () {
   dotsBtn.classList.toggle("active");
   canvasThreeJs.classList.remove("active");
   canvasConnectingDots.classList.remove("active");
+  canvasFlocks.classList.remove('active');
 });
 
 canvasConnectingDotsBtn.addEventListener("click", function () {
@@ -39,4 +46,16 @@ canvasConnectingDotsBtn.addEventListener("click", function () {
   eraserBtn.classList.remove("active");
   penBtn.classList.remove("active");
   dotsBtn.classList.remove("active");
+  canvasFlocks.classList.remove('active');
+});
+
+canvasFlocksBtn.addEventListener("click", function () {
+  canvasFlocks.classList.toggle("active");
+  canvasThreeJs.classList.remove("active");
+  canvasBrush.classList.remove("active");
+  boardResetBtn.classList.remove("active");
+  eraserBtn.classList.remove("active");
+  penBtn.classList.remove("active");
+  dotsBtn.classList.remove("active");
+  canvasConnectingDots.classList.remove("active");
 });

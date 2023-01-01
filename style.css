@@ -1,22 +1,23 @@
 /* main */
-
 .canvasThreeJsBtn {
   z-index: 1;
   position: fixed;
 }
-
 .canvasBrushBtn {
   z-index: 1;
   position: fixed;
   left: 120;
 }
-
 .canvasConnectingDotsBtn {
   z-index: 1;
   position: fixed;
   left: 218;
 }
-
+.canvasFlocksBtn {
+  z-index: 1;
+  position: fixed;
+  left: 376;
+}
 .canvas {
   z-index: 0;
   display: none;
@@ -27,39 +28,16 @@
   height: 100%;
 }
 
-/* .canvasConnectingDots {
-  z-index: 1;
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-} */
-
-/* .canvasBrush {
-  z-index: 0;
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-} */
-
 /* canvasThreeJs */
-
 .canvasThreeJs.active {
   display: block;
 }
 
 /* canvasBrush */
-
 .canvasBrush.active {
   display: block;
-  background-color: rgb(234, 237, 230);
+  background-color: rgb(231, 245, 212);
 }
-
 .brush {
   margin: 4px;
   z-index: 1;
@@ -67,7 +45,6 @@
   bottom: 0;
   right: 0;
 }
-
 .boardResetBtn,
 .eraserBtn,
 .penBtn,
@@ -82,14 +59,18 @@
 .dotsBtn.active {
   display: inline-block;
 }
-
 .on {
   border: 1px solid green;
 }
 
 /* canvasConnectingDots */
-
 .canvasConnectingDots.active {
   display: block;
   background-color: #000;
+}
+
+/* canvasFlocks */
+.canvasFlocks.active {
+  display: block;
+  background-color: rgb(60, 190, 255);
 }

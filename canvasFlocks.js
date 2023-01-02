@@ -16,24 +16,23 @@ class Flocks {
     this.maxSpeed = 2;
     this.minSpeed = 1;
     this.maxForce = 0.25;
-
     this.perceptionRadius = 50;
   }
   flock(flocks) {
     this.acceleration = [0, 0];
-    // 1. Alignment
+    // 1. Alignment (가지런함)
     const alignment = this.align(flocks);
     if (alignment) {
       this.acceleration[0] += alignment[0];
       this.acceleration[1] += alignment[1];
     }
-    // 2. Cohesion
+    // 2. Cohesion (결합)
     const cohesion = this.cohesion(flocks);
     if (cohesion) {
       this.acceleration[0] += cohesion[0];
       this.acceleration[1] += cohesion[1];
     }
-    // 3. Separation
+    // 3. Separation (분리)
     const separation = this.separation(flocks);
     if (separation) {
       this.acceleration[0] += separation[0];

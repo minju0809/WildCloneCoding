@@ -8,9 +8,7 @@ const eraserBtn = document.querySelector(".eraserBtn");
 const penBtn = document.querySelector(".penBtn");
 const dotsBtn = document.querySelector(".dotsBtn");
 
-const canvasConnectingDotsBtn = document.querySelector(
-  ".canvasConnectingDotsBtn"
-);
+const canvasConnectingDotsBtn = document.querySelector(".canvasConnectingDotsBtn");
 const canvasConnectingDots = document.querySelector(".canvasConnectingDots");
 
 const canvasFlocksBtn = document.querySelector(".canvasFlocksBtn");
@@ -19,11 +17,11 @@ const canvasFlocks = document.querySelector(".canvasFlocks");
 canvasThreeJsBtn.addEventListener("click", function () {
   canvasThreeJs.classList.toggle("active");
   canvasBrush.classList.remove("active");
-  canvasConnectingDots.classList.remove("active");
   boardResetBtn.classList.remove("active");
   eraserBtn.classList.remove("active");
   penBtn.classList.remove("active");
   dotsBtn.classList.remove("active");
+  canvasConnectingDots.classList.remove("active");
   canvasFlocks.classList.remove('active');
 });
 

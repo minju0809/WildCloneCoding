@@ -1,22 +1,7 @@
 /* main */
-.canvasThreeJsBtn {
+.btn {
   z-index: 1;
   position: fixed;
-}
-.canvasBrushBtn {
-  z-index: 1;
-  position: fixed;
-  left: 120;
-}
-.canvasConnectingDotsBtn {
-  z-index: 1;
-  position: fixed;
-  left: 218;
-}
-.canvasFlocksBtn {
-  z-index: 1;
-  position: fixed;
-  left: 376;
 }
 .canvas {
   z-index: 0;
